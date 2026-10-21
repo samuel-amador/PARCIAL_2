@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salteneria El Horno</title>
+</head>
+<body>
+    <header>
+        <h1>Salteneria El Horno</h1>
+    </header>
+
+    <main>
+        <p>
+            En El Horno preparamos saltenas para compartir en el barrio.
+            Hace tu pedido y disfruta de nuestros sabores.
+        </p>
+
+        <form id="form-horno" novalidate method="POST" action="procesar.php">
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo electronico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div>
+                <label for="pedido">Que saltenas queres:</label>
+                <textarea id="pedido" name="pedido"></textarea>
+            </div>
+
+            <button type="submit">Hacer mi pedido</button>
+            <p id="aviso-horno" class="aviso"></p>
+        </form>
+    </main>
+
+    <footer>
+        Parcial_2 - Samuel Alfredo Amador Corimayo - 20 de octubre de 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
